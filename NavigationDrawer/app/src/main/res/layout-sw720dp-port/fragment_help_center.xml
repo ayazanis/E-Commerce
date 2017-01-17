@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e7e8"
+    android:orientation="vertical"
+    tools:context="info.androidhive.navigationdrawer.fragment.HelpCenter">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar_3"
+            layout="@layout/toolbar_3">
+        </include>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="150dp"
+       android:padding="20dp">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingBottom="20dp"
+           android:textSize="40sp"
+           android:text="We are ready to serve you in this area. How can I help you."/>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+           <Button
+               android:text="Call Us"
+               android:layout_width="wrap_content"
+               android:layout_height="70dp"
+               android:id="@+id/txt_mobile"
+               android:background="#ee3b40"
+               android:textColor="#fff"
+               android:layout_weight="1"
+               android:layout_marginRight="10dp"
+               android:textSize="28sp" />
+
+           <Button
+               android:text="Mail Us"
+               android:layout_width="wrap_content"
+               android:layout_height="70dp"
+               android:background="#ee3b40"
+               android:textColor="#fff"
+               android:id="@+id/txt_mail"
+               android:layout_weight="1"
+               android:textSize="28sp" />
+       </LinearLayout>
+   </LinearLayout>
+
+
+</LinearLayout>

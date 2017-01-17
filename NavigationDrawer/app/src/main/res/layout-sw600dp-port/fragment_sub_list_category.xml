@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.navigationdrawer.fragment.Sub_list_category">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#00ff00">
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cardview_dark_background"
+        android:id="@+id/container_toolbar2">
+    <include
+        android:id="@+id/toolbar_2"
+        layout="@layout/toolbar_2">
+    </include>
+    </LinearLayout>-->
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sublist_imageview"
+            android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sublist_recyclerview_layout">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="#e6e7e8"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadItemsLayout_recyclerView"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:layout_below="@+id/sublist_recyclerview_layout"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/more_progress"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

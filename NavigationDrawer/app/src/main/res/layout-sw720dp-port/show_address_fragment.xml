@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="info.androidhive.navigationdrawer.fragment.ShowAddress">
+
+    <include
+        android:id="@+id/show_address_toolbar"
+        layout="@layout/toolbar_3">
+    </include>
+
+    <Button
+        android:text="Add New Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:id="@+id/show_address_fragment_button"
+        android:layout_weight="0.05" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/address_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="#e6e7e8">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartlist_bottomtoolbar"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.02"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#ee3b40"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Cart Total is    : "
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:layout_marginLeft="50dp"
+                android:textSize="30sp"
+                android:textColor="#fff"
+                android:id="@+id/cart_total_text" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

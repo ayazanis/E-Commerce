@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e7e8"
+    tools:context="info.androidhive.navigationdrawer.fragment.SignupPage">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_3"
+            layout="@layout/toolbar_3">
+
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/first_name"
+                android:id="@+id/signup_fname_imageview"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_fname_edittext"
+                android:textSize="26sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:hint="First Name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/last_name"
+                android:id="@+id/signup_lname_imageview"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_lname_edittext"
+                android:layout_marginLeft="20dp"
+                android:textSize="26sp"
+                android:layout_marginRight="10dp"
+                android:hint="Last Name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/mail_id"
+                android:id="@+id/signup_email_imageview"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_email_edittext"
+                android:layout_marginLeft="20dp"
+                android:textSize="26sp"
+                android:layout_marginRight="10dp"
+                android:hint="Email" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/phone"
+                android:id="@+id/signup_phone_imageview"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_phone_edittext"
+                android:maxLength="10"
+                android:textSize="26sp"
+                android:inputType="number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:hint="Phone" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/lock_pswd"
+                android:id="@+id/signup_password_imageview"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_password_edittext"
+                android:inputType="textPassword"
+                android:textSize="26sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:hint="Password" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/cnf_pswd"
+                android:id="@+id/signup_cnfrm_password_imageview"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/signup_cnfrm_password_edittext"
+                android:inputType="textPassword"
+                android:layout_marginLeft="20dp"
+                android:textSize="26sp"
+                android:layout_marginRight="10dp"
+                android:hint="Confirm Password" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signup_signup_button"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textSize="26sp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</FrameLayout>

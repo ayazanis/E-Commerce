@@ -1,0 +1,143 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eff0ef"
+    tools:context="info.androidhive.navigationdrawer.fragment.Address_Fragment">
+
+    <include
+        android:id="@+id/address_fragment_toolbar"
+        layout="@layout/toolbar_3">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="#fff"
+                android:id="@+id/fname_edit"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_margin="10dp"
+                android:layout_weight="0.46"
+                android:hint="Enter First Name" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="#fff"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:id="@+id/lname_edit"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.46"
+                android:layout_margin="10dp"
+                android:hint="Enter Last Name" />
+
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="147dp"
+                android:inputType="textMultiLine"
+                android:id="@+id/address_edittext"
+                android:maxLines="6"
+                android:textSize="12dp"
+                android:background="#fff"
+               android:layout_margin="10dp"
+                android:padding="5dp"
+                android:hint="Enter Address"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="#fff"
+                android:id="@+id/area_Edittext"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:layout_weight="0.46"
+                android:layout_margin="10dp"
+                android:hint="Enter Area" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="#fff"
+                android:id="@+id/city_editText"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.46"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:layout_margin="10dp"
+                android:hint="Enter City" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="#fff"
+                android:textSize="12dp"
+                android:id="@+id/pincode_editText"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.46"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="Enter Pincode" />
+
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:background="#fff"
+                android:id="@+id/contact_edittext"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:layout_weight="0.46"
+                android:layout_margin="10dp"
+                android:hint="Enter Contact No." />
+
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:layout_height="67dp"
+       android:weightSum="1.5">
+
+           <TextView
+               android:id="@+id/save_address_button"
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:textColor="#fff"
+               android:text="Save Address"
+               android:background="@color/colorPrimary"
+               android:gravity="center" />
+
+      </LinearLayout>
+     </LinearLayout>
+    </ScrollView>
+</LinearLayout>

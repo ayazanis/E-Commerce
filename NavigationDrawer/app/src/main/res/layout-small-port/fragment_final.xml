@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.androidhive.navigationdrawer.fragment.FinalFragment">
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/toolbar_final_page"
+            layout="@layout/toolbar_3">
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:text="Your purchase will arrive in the following delivery"
+            android:inputType="textMultiLine"/>
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="10sp"
+           android:layout_gravity="center"
+           android:layout_marginLeft="9dp"
+           android:text="Number of Items :"/>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:id="@+id/final_frag_no_of_items_layout"
+          android:layout_weight="0.5">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="999"
+              android:layout_gravity="center"
+              android:textSize="10sp"
+              android:id="@+id/final_frag_no_of_items_text"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="    Items"
+              android:textSize="10sp"/>
+      </LinearLayout>
+   </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coupon Code"
+            android:textSize="10sp"
+            android:layout_weight="0.5"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/final_frag_couponcode"
+            android:layout_weight="2.50"
+            android:textSize="10sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Apply"
+            android:textSize="10sp"
+            android:id="@+id/final_frag_apply_btn"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="******Please enter valid Coupon code*****"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/finalfrag_shipping_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Total amount > Rs.200.0,No shipping charges"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="Delivery Charges :-"/>
+
+        <TextView
+            android:id="@+id/finalfrag_deliverytxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="9dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Method :-"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:checked="true"
+            android:textSize="10sp"
+            android:id="@+id/paybycash"
+            android:shadowColor="@color/cardview_dark_background"
+            android:text="Pay By Cash"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/onlinepayment"
+            android:textSize="10sp"
+            android:shadowColor="@color/cardview_dark_background"
+            android:text="Online Payment"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#ee3b40"
+        android:layout_height="23dp">
+
+            <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="11sp"
+            android:text="Total Amount is:"/>
+
+        <TextView
+            android:layout_width="38dp"
+            android:gravity="center|center_vertical"
+            android:layout_height="wrap_content"
+            android:id="@+id/finalfrag_totalAmount"
+            android:textSize="11sp"
+            android:textColor="#fff"
+            android:text="1111"/>
+
+        <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/finalfrag_checkout"
+        android:textSize="13sp"
+        android:text="Checkout>>>"
+        android:textColor="#fff"
+        android:padding="3dp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+</LinearLayout>

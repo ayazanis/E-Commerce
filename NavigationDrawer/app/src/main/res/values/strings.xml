@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Navigation Drawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="Electronics">Electronics</string>
+    <string name="Clothes">Clothes</string>
+    <string name="Home_and_Living">Home and Living</string>
+    <string name="Books">Books</string>
+    <string name="Movies_and_TVshows">Movies and TVshows</string>
+    <string name="Shoes">Shoes</string>
+    <string name="Beauty_and_PersonalCare">Beauty and PersonalCare</string>
+    <string name="My_Account">My Account</string>
+    <string name="My_Wallet">My Wallet</string>
+    <string name="My_Orders">My Orders</string>
+    <string name="Help_Center">Help Center</string>
+    <string name="SignIn_or_LogOut">SignIn/Logout</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Electronics</item>
+        <item>Clothes</item>
+        <item>Home and Living</item>
+        <item>Books</item>
+        <item>Movies and TVshows</item>
+        <item>Shoes</item>
+        <item>Beauty and PersonalCare</item>
+        <item>My Account</item>
+        <item>My Wallet</item>
+        <item>My Orders</item>
+        <item>Help Center</item>
+        <item>SignIn/Logout</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

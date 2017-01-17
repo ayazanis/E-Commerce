@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@drawable/border1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linb_bg"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_order_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Order Sent Sucessfully"
+            android:textColor="#E94F57"
+            android:textSize="26dp" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#000" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="160dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/actionbar_bg"
+        android:text="Ok"
+        android:textColor="#fff"
+        android:textSize="27dp" />
+
+</LinearLayout>

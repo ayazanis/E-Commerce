@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.androidhive.navigationdrawer.fragment.Edit_Address">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        android:id="@+id/toolbar_3"
+        layout="@layout/toolbar_3">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingBottom="20dp">
+        <EditText
+            android:id="@+id/edit_address_address"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:text="First_Name"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/et_bg" />
+
+        <EditText
+            android:id="@+id/edit_address_area"
+            android:layout_width="210dp"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:text="Last_Name"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/et_bg" />
+
+        <EditText
+            android:id="@+id/edit_address_city"
+            android:layout_width="210dp"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/et_bg" />
+
+        <EditText
+            android:id="@+id/edit_address_pincode"
+            android:layout_width="210dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:singleLine="true"
+            android:layout_marginTop="20dp"
+            android:text="Mobile Number"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/et_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/edit_prof_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="#ee3b40"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="start">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:id="@+id/toolbar_search_back_image"
+                android:src="@drawable/back_arrow"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+            android:gravity="center_vertical">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="5dp"
+               android:id="@+id/search_edittext"
+               android:layout_gravity="center"
+               android:background="#fff"
+               android:textColor="#000"
+               android:hint="Search...."
+               android:imeOptions="actionSearch"
+               android:inputType="text"
+               android:textCursorDrawable="@null"
+               android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+           >
+
+            <ImageButton
+                android:layout_marginTop="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/toolbarsearch_search"
+                android:background="@drawable/search"/>
+
+
+        </LinearLayout>
+
+
+
+</android.support.v7.widget.Toolbar>

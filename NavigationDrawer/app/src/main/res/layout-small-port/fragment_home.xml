@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6f7ff"
+    tools:context="info.androidhive.navigationdrawer.fragment.HomeFragment"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        android:id="@+id/main_category_layout"
+        android:background="#008bcc"
+        android:layout_marginTop="110dp"
+        android:focusableInTouchMode="false">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/horizontal_recycler_view"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="#e6f7ff"
+                android:layout_marginTop="0.7dp"
+                android:layout_marginBottom="0.7dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+    </LinearLayout>
+
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/previous_btn_layout"
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:alpha="@android:integer/config_mediumAnimTime"
+            android:clickable="true">
+
+            <ImageButton
+                android:id="@+id/previous_btn"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:background="@drawable/previous"
+                android:clickable="true"
+                android:contextClickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_toLeftOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/previous_btn_layout"
+            android:layout_toEndOf="@+id/previous_btn_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/center_image1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="#00ff00"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/center_image2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="#0ff"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="100dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:background="#ffffff"
+            android:weightSum="1"
+            android:alpha="@android:integer/config_mediumAnimTime"
+            android:clickable="true"
+            android:id="@+id/linearLayout">
+
+            <ImageButton
+                android:id="@+id/forward_btn"
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:background="@drawable/forward"
+                android:clickable="true"
+                android:contextClickable="true" />
+        </LinearLayout>
+    </RelativeLayout>-->
+
+   <!-- <RelativeLayout
+        android:id="@+id/gallery_paging"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.androidtoppers.slidingimage.Gallery_Activity
+            android:id="@+id/mygallery01"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:fadingEdge="none"
+            android:spacing="0px" />
+
+        <LinearLayout
+            android:id="@+id/image_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>-->
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingBottom="30dp"
+        android:paddingEnd="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingStart="30dp" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageSwitcher
+            android:id="@+id/below_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

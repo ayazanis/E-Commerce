@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_electronics"
+            android:icon="@drawable/electronic"
+            android:title="@string/Electronics" />
+        <item
+            android:id="@+id/nav_clothes"
+            android:icon="@drawable/clothes"
+            android:title="@string/Clothes" />
+
+        <item
+            android:id="@+id/nav_homeandliving"
+            android:icon="@drawable/home_and_living"
+            android:title="@string/Home_and_Living" />
+
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/books"
+            android:title="@string/Books" />
+
+        <item
+            android:id="@+id/nav_moviesandtvshows"
+            android:icon="@drawable/movies_and_music"
+            android:title="@string/Movies_and_TVshows" />
+
+        <item
+            android:id="@+id/nav_shoes"
+            android:icon="@drawable/shoes"
+            android:title="@string/Shoes" />
+
+        <item
+            android:id="@+id/nav_beautyandpersonalcare"
+            android:icon="@drawable/beautycare_and_personalcare"
+            android:title="@string/Beauty_and_PersonalCare" />
+    <!--</group>
+
+            <group android:checkableBehavior="single"
+                android:id="@+id/menu_mid">-->
+            <item
+                android:id="@+id/nav_myaccount"
+                android:title="@string/My_Account" />
+            <item
+                android:id="@+id/nav_mywallet"
+                android:title="@string/My_Wallet" />
+            <item
+                android:id="@+id/nav_myorders"
+                android:title="@string/My_Orders"/>
+           <!-- </group>
+
+            <group android:checkableBehavior="single"
+                android:id="@+id/menu_bottom">-->
+                <item
+                    android:id="@+id/nav_helpcenter"
+                    android:title="Help Center"/>
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login">
+                    </item>
+            </group>
+
+</menu>

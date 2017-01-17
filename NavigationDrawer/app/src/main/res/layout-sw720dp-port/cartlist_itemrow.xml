@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start">
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/cartlist_prod_img"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cartlist_item_textlayout"
+        android:layout_width="550dp"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:background="#00ff00"
+        android:layout_height="175dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:minLines="4"
+            android:maxLines="6"
+            android:focusable="false"
+            android:clickable="false"
+            android:id="@+id/cartlist_prod_name"
+            android:textSize="25sp"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssssssssssssssssssssssssssssssssssss" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="87dp"
+                android:layout_height="46dp"
+                android:text="Price: "
+                android:textSize="25sp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cartlist_prod_price"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/cartlistrow_addbutton"
+                android:background="@drawable/on_button"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/cartlistrow_addlayout"
+                android:gravity="center">
+
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="left"
+                    android:id="@+id/cartlistrow_decbutton"
+                    android:background="@drawable/off_button"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/cartlistrow_counttext"
+                    android:paddingLeft="2sp"
+                    android:paddingRight="2sp" />
+
+                <Button
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/cartlistrow_incbutton"
+                    android:background="@drawable/off_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/cartlistrow_delbutton"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/delete"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

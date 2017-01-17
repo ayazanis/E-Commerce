@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e7e8"
+    tools:context="info.androidhive.navigationdrawer.fragment.Productdescription">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar_3"
+            layout="@layout/toolbar_3">
+        </include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:weightSum="6">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/running_shoes"
+                android:id="@+id/productdesc_productimage"
+                android:layout_weight="4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:id="@+id/productdesc_prodnametextview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productdesc_wishlistimage"
+                    android:src="@drawable/wish_list_blank"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:visibility="gone"
+                           android:id="@+id/productdesc_addlayout"
+                           android:layout_gravity="center_vertical">
+
+                           <Button
+                               android:layout_width="40dp"
+                               android:layout_height="40dp"
+                               android:id="@+id/productdesc_decbutton"
+                               android:background="@drawable/off_button"
+                               android:layout_gravity="center_vertical"/>
+
+                           <TextView
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_vertical"
+                               android:id="@+id/productdesc_counttext"
+                               android:text=""
+                               android:layout_width="30dp"
+                               android:textSize="26sp" />
+
+                           <Button
+                               android:layout_width="35dp"
+                               android:layout_height="35dp"
+                               android:layout_gravity="center_vertical"
+                               android:id="@+id/productdesc_incbutton"
+                               android:background="@drawable/off_button"/>
+
+                       </LinearLayout>
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:id="@+id/productdesc_addbutton"
+                        android:background="@drawable/on_button"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cost : "
+                    android:textAllCaps="false"
+                    android:textSize="26sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productdesc_costtextview"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="26sp"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:text="kajdsflkj;"
+                android:textSize="26dp"
+                android:id="@+id/productdesc_desctextview"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+           <Button
+               android:id="@+id/productdesc_addtocart"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Add to Cart"
+               android:textSize="26dp"
+               android:layout_gravity="bottom"
+               android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
